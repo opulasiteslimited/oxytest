@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Now</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        .landing-page, .product-page {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        .landing-page {
+            background: url('porsche-911-turbo-s-1080x2160-12445.jpg.jpg') no-repeat center center/cover;
+        }
+        .navbar {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.5);
+        }
+        .navbar img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .logotxt {
+            font-family: 'Old Standard TT', serif;
+            margin-bottom: 10%;
+            font-size: 33px;
+            color: rgb(28, 27, 27);
+
+        }
+        .center-button {
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            background: none;
+            border: none;
+            border-radius: 5px;
+            border: soldi white 1.6px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .product-page {
+            background: white;
+        }
+        .product {
+            text-align: center;
+            margin: 20px;
+        }
+        .product img {
+            width: 200px;
+            height: auto;
+        }
+        .product-title {
+            margin: 10px 0;
+            font-size: 24px;
+        }
+
+        .product-size {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .product-size select {
+            padding: 5px;
+            font-size: 16px;
+        }
+        .p
+
+        .product-buttons button {
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+        .buy-now {
+            background-color: #065c1a;
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .buy-now:hover {
+            background-color: #2c3d2e;
+        }
+
+        .add-to-cart {
+            background-color: #05390d;
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .add-to-cart:hover {
+            background-color: #2c3d2e;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="landing-page">
+    <div class="navbar">
+        <img src="cart-icon.png" alt="Einkaufswagen">
+        <img src="menu-icon.png" alt="Menü">
+    </div>
+    <div class="logotxt"> CLUB  1899</div>
+    <button class="center-button" onclick="location.href='#product-page'">Shop Now</button>
+</div>
+
+<div id="product-page" class="product-page">
+    <div class="navbar">
+        <img src="cart-icon.png" alt="Einkaufswagen">
+        <img src="menu-icon.png" alt="Menü">
+    </div>
+    <div class="product">
+        <img src="product-image.jpg" alt="Produkt">
+        <div class="product-title">Vintage White Driven by Dreams Cotton T-Shirt</div>
+        <div class="product-size">
+            Größe auswählen: 
+            <select>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+            </select>
+        </div>
+        <div class="product-buttons">
+            <button class="buy-now">Jetzt kaufen</button>
+            <button class="add-to-cart">In den Einkaufswagen</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
